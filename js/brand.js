@@ -3,7 +3,7 @@ $(document).ready(function() {
 
     function load_json_data(id, parent_id) {
         var html_code = '';
-        $.getJSON('https://firebasestorage.googleapis.com/v0/b/enquiryrequest-50ecb.appspot.com/o/brand.json?alt=media&token=8db645d8-66fb-4e98-b913-071bbc9d63f5', function(data) {
+        $.getJSON('json/brand.json', function(data) {
             if (id == 'brand') {
                 html_code += '<option value="">品牌</option>';
             } else {
