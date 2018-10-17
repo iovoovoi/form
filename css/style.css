@@ -1,7 +1,6 @@
 html, body {
     font-family: "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei";
     height: 100%;
-    -webkit-appearance: none;
 }
 h1 {
     font-size: 36px;
@@ -104,6 +103,11 @@ a, a:active, a:hover {
 .dropdown-item:hover, .dropdown-item:active {
     background-color: #F1F3F4;
     color: #515151;
+}
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
 }
 .option {
     background-color: #F1F3F4;
