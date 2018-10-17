@@ -1,6 +1,7 @@
 html, body {
     font-family: "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei";
     height: 100%;
+    -webkit-appearance: none;
 }
 h1 {
     font-size: 36px;
@@ -115,8 +116,9 @@ a, a:active, a:hover {
     height: 50px;
     width: 100%;
     white-space: normal;
+    -webkit-appearance: none;
 }
-.option:hover, .option:focus, .option:active {
+.option:hover, .option:active {
     background-color: #EA2E36;
     border: 0;
     color: #ffffff;
@@ -124,6 +126,7 @@ a, a:active, a:hover {
     box-shadow: none;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
+    -webkit-appearance: none;
 }
 .modal-header, .modal-footer {
     border: 0;
