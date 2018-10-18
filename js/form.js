@@ -42,7 +42,7 @@ function appointment() {
     //提交ajax
     var data = $('#form').serialize();
     $.ajax({
-        'url': 'test.php',
+        'url': 'https://rocky-mesa-30908.herokuapp.com/',
         'type': 'POST',
         'dataType': "json",
         'timeout': 2000,
