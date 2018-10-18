@@ -29,9 +29,22 @@
         <div class="container-fluid">
             <div class="success">
                 <h1>
-                    您的信息已收到，我们会尽快联系您
+                    <span id="request_type">您的信息已收到</span>，我们会尽快联系您
                 </h1>
             </div>
         </div>
+        <script>
+            function getQueryString(name)
+            {
+                 var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+                 var r = window.location.search.substr(1).match(reg);
+                 if(r!=null)return  unescape(r[2]); return null;
+            }
+            var request_type = getQueryString('request_type');
+            var request_str = ['您的询价已收到','你的试驾申请已收到'];
+            if (request_type != null) {
+                document.getElementById('request_type').innerHTML = request_str[request_type];
+            }
+        </script>
     </body>
 </html>

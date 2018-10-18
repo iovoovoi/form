@@ -135,7 +135,7 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input class="form-control" name="phone" type="phone">
+                                            <input id="phone" class="form-control" name="phone" type="phone">
                                             </input>
                                         </div>
                                     </div>
@@ -156,14 +156,10 @@
                 </div>
             </div>
         </form>
+        <script>
+            $("select").click(function(){
+                $(this).css({"background-color": "#EA2E36", "color": "#fff"});
+            });
+        </script>
     </body>
 </html>
-<script>
-    $("select").click(function(){
-        $(this).css({"background-color": "#EA2E36", "color": "#fff"});
-    });
-
-   $('.complete').click(function(){
- window.open('success.html', '_blank');
-});
-</script>
