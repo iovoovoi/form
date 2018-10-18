@@ -67,5 +67,5 @@ function appointment() {
         }
     });
     //不管ajax结果,2秒跳转
-    setTimeout('to("' + successUrl + '")', 1000);
+    setTimeout('to("' + successUrl + '")', 300);
 }
