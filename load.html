@@ -13,33 +13,5 @@
         </script>
     </head>
 </html>
-<script src="js/jquery.xdomainajax.js">
-</script>
-<style>
-    html, body {
-    height: 100%;
-}
-
-div {
-    height: 99%;
-}
-
-object {
-    width: 100%;
-    min-height: 100%;
-}
-</style>
-<body>
-    <div id="siteloader">
-    </div>
-</body>
-<script type="text/javascript">
-    $(document).ready(function() {  // load document 
-    $.ajax({
-      url: "http://iovoovoi.github.io/form/index.html",
-      context: document.body
-    }).done(function(response, status, xhr) {
-      $("#siteloader").html(response);
-    }); 
-});
-</script>
+<meta content="0; url=https://iovoovoi.github.io/form/index.html" http-equiv="refresh">
+</meta>
