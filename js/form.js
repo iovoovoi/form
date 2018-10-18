@@ -24,6 +24,15 @@ function checkMobile(val) {
     }
 }
 /**
+ * 跳转
+ * @param  {string} fullUrl 
+ * @return {mixed}         
+ */
+function to(fullUrl) {
+    location.href = fullUrl;
+    return;
+}
+/**
  * ajax提交表单
  * code:
  * 100  业务正常
@@ -41,29 +50,22 @@ function appointment() {
     $('.complete').attr('disabled', 'disabled');
     //提交ajax
     var data = $('#form').serialize();
+    //不管结果直接跳转
+    var request_type = $('#request_type').val();
+    request_type = request_type == 1 ? 1 : 0;
+    var successUrl = 'success.html?request_type=' + request_type;
     $.ajax({
         'url': 'https://rocky-mesa-30908.herokuapp.com/',
         'type': 'POST',
         'dataType': "json",
-        'timeout': 2000,
         'data': data,
         'success': function(result) {
-            //不管结果直接跳转
-            var request_type = $('#request_type').val();
-            request_type = request_type == 1 ? 1 : 0;
-            location.href = 'success.html?request_type=' + request_type;
-            return;
             if (result.code == 100) {
                 //成功跳转
-                location.href = 'success.html?request_type=' + request_type;
-            } else {
-                //失败看console
-                console.log('ajax fail');
-                console.log('data:');
-                console.log(data);
-                console.log('result:');
-                console.log(result);
+                to(successUrl);
             }
         }
     });
+    //不管ajax结果,2秒跳转
+    setTimeout('to("' + successUrl + '")', 2000);
 }
