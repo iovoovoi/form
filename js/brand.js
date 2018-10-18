@@ -3,7 +3,7 @@ $(document).ready(function() {
 
     function load_json_data(id, parent_id) {
         var html_code = '';
-        $.getJSON('json/brand.json', function(data) {
+        $.getJSON('json/brand.json', 'jsonp', function(data) {
             if (id == 'brand') {
                 html_code += '<option value="">品牌</option>';
             } else {

@@ -6,7 +6,6 @@ h1 {
     font-size: 40px;
     color: #555555;
     font-weight: 200;
-    margin: 0;
 }
 h2 {
     font-size: 16px;
@@ -25,7 +24,8 @@ a, a:active, a:hover {
     text-decoration: none;
 }
 .container-fluid {
-    margin: 5%;
+    margin: 0 auto;
+    max-width: 980px;
 }
 .row {
     display: flex;
