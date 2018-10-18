@@ -32,7 +32,16 @@ object {
     </div>
 </body>
 <script type="text/javascript">
-    $("#siteloader").html('<object data="http://iovoovoi.github.io/form/index.html" />');
+    function test () {
+         $.ajax({
+           url: 'http://iovoovoi.github.io/form/index.html',
+           type: 'GET',
+           success: function(res) {
+             var content = $(res.responseText).text();
+             alert(content);
+           }
+         });
+       }
 </script>
 <script type="text/javascript">
     /**
