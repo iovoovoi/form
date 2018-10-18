@@ -89,7 +89,7 @@ a, a:active, a:hover {
 .form-group {
     margin: 0;
 }
-.form-control, .form-control:active, .form-control:focus {
+.form-control {
     /* background-color: #F1F3F4;*/
     border: 2px solid #F1F3F4;
     border-radius: 2rem;
@@ -97,6 +97,10 @@ a, a:active, a:hover {
     padding: 0 30px;
     outline: 0px !important;
     -webkit-appearance: none;
+}
+.form-control:active, .form-control:focus {
+    /* background-color: #F1F3F4;*/
+    border: 2px solid #EA2E36;
 }
 /*
 .form-control, .form-control:active, .form-control:focus {
