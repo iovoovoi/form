@@ -5,8 +5,8 @@ html, body {
 h1 {
     font-size: 40px;
     color: #555555;
-    font-weight: 100;
-    margin-top: 6px;
+    font-weight: 200;
+    margin: 0;
 }
 h2 {
     font-size: 16px;
@@ -92,6 +92,7 @@ a, a:active, a:hover {
 .form-group {
     margin: 0;
 }
+/*
 .form-control, .form-control:active, .form-control:focus {
     background-color: #F1F3F4;
     border: none;
@@ -100,6 +101,16 @@ a, a:active, a:hover {
     padding: 0 30px;
     outline: 0px !important;
     -webkit-appearance: none;
+}
+*/
+
+.form-control, .form-control:active, .form-control:focus {
+    border: none;
+    height: 30px;
+    padding: 0 30px;
+    outline: 0px !important;
+    -webkit-appearance: none;
+    box-shadow: 0 3px #F1F3F4;
 }
 .dropdown-item:hover, .dropdown-item:active {
     background-color: #F1F3F4;
@@ -123,6 +134,7 @@ select {
     white-space: normal;
     -webkit-appearance: none;
     padding: 0 20px;
+    font-weight: 600;
 }
 .option:hover, .option:active {
     background-color: #EA2E36;
