@@ -26,6 +26,7 @@ a, a:active, a:hover {
 .container-fluid {
     margin: 0 auto;
     max-width: 980px;
+    height: 100%;
 }
 .row {
     display: flex;
@@ -153,6 +154,7 @@ select {
 }
 .modal-footer {
     justify-content: center;
+    padding: 10px;
 }
 .modal-dialog {
     margin-top: 0;
@@ -178,4 +180,8 @@ select {
 }
 .btn-outline a:active, .btn-outline a:hover {
     color: #fff;
+}
+.success {
+    position: relative;
+    top: 25%;
 }
