@@ -90,10 +90,10 @@ a, a:active, a:hover {
     margin: 0;
 }
 .form-control, .form-control:active, .form-control:focus {
-    background-color: #F1F3F4;
-    border: none;
+    /* background-color: #F1F3F4;*/
+    border: 1px solid #F1F3F4;
     border-radius: 2rem;
-    height: 35px;
+    height: 42px;
     padding: 0 30px;
     outline: 0px !important;
     -webkit-appearance: none;
