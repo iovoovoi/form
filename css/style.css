@@ -10,7 +10,7 @@ h1 {
 }
 h2 {
     font-size: 16px;
-    color: #a9a9a9;
+    color: #a2a1a3;
     line-height: 12px;
     font-weight: 300;
     padding-top: 20px;
@@ -69,7 +69,7 @@ a, a:active, a:hover {
     -webkit-border-radius: 2rem;
     -moz-border-radius: 2rem;
     border-radius: 2rem;
-    width: 114px;
+    width: 100px;
     height: 42px;
     font-size: 14px;
     color: #EA2E36;
@@ -91,7 +91,7 @@ a, a:active, a:hover {
 }
 .form-control, .form-control:active, .form-control:focus {
     /* background-color: #F1F3F4;*/
-    border: 1px solid #F1F3F4;
+    border: 2px solid #F1F3F4;
     border-radius: 2rem;
     height: 42px;
     padding: 0 30px;
