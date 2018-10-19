@@ -3,7 +3,7 @@ html, body {
     height: 100%;
 }
 h1 {
-    font-size: calc(28px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(32px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
     color: #555555;
     font-weight: 300;
     margin: 0;
@@ -51,6 +51,7 @@ a, a:active, a:hover {
     width: 100%;
     white-space: normal;
     font-weight: 600;
+    padding-left: 25px;
 }
 .btn-active {
     background-color: #EA2E36;
@@ -137,7 +138,7 @@ select {
     width: 100%;
     white-space: normal;
     -webkit-appearance: none;
-    padding: 0 20px;
+    padding-left: 25px;
     font-weight: 600;
 }
 .option:hover, .option:active {
@@ -198,5 +199,5 @@ select {
     line-height: 20 px;
 }
 select {
-    text-align-last: center;
+    /*text-align-last: center;*/
 }
