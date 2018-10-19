@@ -192,9 +192,10 @@ select {
     text-align: center;
 }
 .success h1 {
-    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-    line-height: 20px;
+    font-size: calc(18px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: 20 px;
 }
 select {
-    text-indent: calc(50% - 15px);
+    text-indent: calc(50% - 25px);
+    text-align-last: center;
 }
