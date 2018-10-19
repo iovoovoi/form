@@ -3,10 +3,11 @@ html, body {
     height: 100%;
 }
 h1 {
-    font-size: 40px;
+    font-size: calc(28px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
     color: #555555;
     font-weight: 300;
     margin: 0;
+    line-height: 32px;
 }
 h2 {
     font-size: 14px;
@@ -197,6 +198,5 @@ select {
     line-height: 20 px;
 }
 select {
-    text-indent: calc(50% - 25px);
     text-align-last: center;
 }
