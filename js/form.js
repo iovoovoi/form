@@ -56,7 +56,7 @@ function appointment() {
     request_type = request_type == 1 ? 1 : 0;
     var successUrl = 'success.html?request_type=' + request_type;
     $.ajax({
-        'url': 'https://rocky-mesa-30908.herokuapp.com/request',
+        'url': 'https://rocky-mesa-30908.herokuapp.com/request/',
         'type': 'POST',
         'dataType': "json",
         'data': data,
