@@ -29,7 +29,8 @@ function checkMobile(val) {
  * @return {mixed}         
  */
 function to(fullUrl) {
-    location.href = fullUrl;
+    //location.href = fullUrl;
+    window.open(fullUrl);
     return;
 }
 /**
@@ -61,11 +62,11 @@ function appointment() {
         'data': data,
         'success': function(result) {
             if (result.code == 100) {
-                //成功跳转
-                to(successUrl);
+                //成功跳转    to(successUrl);
+            
             }
         }
     });
     //不管ajax结果,2秒跳转
-    setTimeout('to("' + successUrl + '")', 300);
+    setTimeout('to("' + successUrl + '")', 300,'_blank');
 }
