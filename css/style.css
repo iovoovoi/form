@@ -197,6 +197,3 @@ select {
     font-size: calc(18px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
     line-height: 20 px;
 }
-select {
-    /*text-align-last: center;*/
-}
