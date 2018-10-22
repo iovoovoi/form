@@ -43,7 +43,7 @@ function to(fullUrl) {
 function appointment() {
     //check mobile number
     if (checkMobile($('#phone').val()) == false) {
-        alert('手机号码格式不符合');
+        alert('请留下您的澳洲手机号码');
         return;
     }
     //disable complete button,不允许重复提交
